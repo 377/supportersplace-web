@@ -1,0 +1,60 @@
+{
+  "name": "supportersplace",
+  "version": "0.0.0",
+  "description": "Supportsplace e-commerce solution",
+  "homepage": "",
+  "author": {
+    "name": "Henrik Stridsman",
+    "email": "henrik@samdodds.com",
+    "url": "samdodds.com"
+  },
+  "scripts": {
+    "test": "testee src/test.html --browsers firefox --reporter Spec",
+    "start": "can-serve --port 8080",
+    "develop": "can-serve --develop --port 8080",
+    "document": "documentjs",
+    "build": "node build"
+  },
+  "main": "supportersplace/index.stache!done-autorender",
+  "files": [
+    "src"
+  ],
+  "keywords": [],
+  "system": {
+    "main": "supportersplace/index.stache!done-autorender",
+    "directories": {
+      "lib": "src"
+    },
+    "configDependencies": [
+      "live-reload"
+    ],
+    "npmIgnore": [
+      "documentjs",
+      "testee",
+      "donejs-deploy",
+      "generator-donejs",
+      "donejs-cli"
+    ]
+  },
+  "dependencies": {
+    "can": "^2.3.7",
+    "can-connect": "^0.3.3",
+    "can-ssr": "^0.11.0-pre.4",
+    "done-autorender": "^0.6.0-pre.0",
+    "done-component": "^0.3.1",
+    "done-css": "^1.1.15",
+    "generator-donejs": "^0.3.5",
+    "jquery": "^2.1.4",
+    "steal": "^0.13.0-pre.6"
+  },
+  "devDependencies": {
+    "can-fixture": "^0.1.1",
+    "documentjs": "^0.3.3",
+    "donejs-cli": "^0.6.0-pre.3",
+    "donejs-deploy": "^0.3.1",
+    "funcunit": "^3.0.0",
+    "steal-qunit": "^0.1.1",
+    "steal-tools": "^0.13.0-pre.2",
+    "testee": "^0.2.3"
+  }
+}
